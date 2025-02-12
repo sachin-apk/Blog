@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="post_list scroll">
+    <h1 id="head1">Blog Posts</h1>
+    <ul>
+        {% for post in posts %}
+        <li class='card'>
+            <a href="{% url "post_detail" post.pk %}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock content %}
+

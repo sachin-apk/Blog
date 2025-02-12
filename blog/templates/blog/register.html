@@ -1,0 +1,13 @@
+{% extends "base.html" %}   
+
+{% block content %}
+<div class = "centerpage">
+<div class="register-container">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Register</button>
+    </form>
+</div>
+</div>
+{% endblock content %}

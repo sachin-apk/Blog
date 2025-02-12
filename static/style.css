@@ -1,0 +1,1163 @@
+/* bace page css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Global Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    /* Clean, readable font */
+    background-color: #f4f4f4;
+    /* Light grey background */
+    color: #333;
+    /* Standard dark text color */
+}
+
+
+/* Navbar Styles */
+
+.navbar {
+    display: flex;
+    /* Flexbox for easy alignment */
+    justify-content: space-between;
+    /* Space out left and right nav items */
+    align-items: center;
+    /* Center items vertically */
+    background-color: #222;
+    /* Dark background for contrast */
+    padding: 1rem;
+    /* Padding around the navbar */
+    color: #fff;
+    /* White text for readability */
+}
+
+.navbar .Lnav,
+.navbar .Rnav {
+    display: flex;
+    /* Display nav items in a row */
+}
+
+.navbar ul {
+    list-style-type: none;
+    /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Display list items in a row */
+}
+
+.navbar li {
+    margin: 0 1rem;
+    /* Spacing between nav items */
+}
+
+.navbar a {
+    color: #fff;
+    /* White text for links */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.navbar span {
+    font-weight: bold;
+    /* Make the brand name bold */
+    font-size: 1.2rem;
+    /* Slightly larger font size */
+}
+
+
+/* Search Form Styles */
+
+.search input[type="search"] {
+    padding: 0.5rem;
+    /* Padding inside search input */
+    border: none;
+    /* Remove default border */
+    border-radius: 4px;
+    /* Rounded corners */
+    margin-right: 0.5rem;
+    /* Space between search input and button */
+}
+
+.search input[type="submit"] {
+    padding: 0.5rem 1rem;
+    /* Padding inside button */
+    border: none;
+    /* Remove default border */
+    border-radius: 4px;
+    /* Rounded corners */
+    background-color: #3498db;
+    /* Blue background */
+    color: #fff;
+    /* White text */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+.search input[type="submit"]:hover {
+    background-color: #2980b9;
+    /* Darker blue on hover */
+}
+
+
+/* Content Styles */
+
+#content {
+    padding: 2rem;
+    /* Padding around content area */
+}
+
+
+/* Footer Styles */
+
+footer {
+    background-color: #222;
+    /* Dark background */
+    color: #fff;
+    /* White text */
+    text-align: center;
+    /* Center text */
+    padding: .5rem;
+    /* Padding around footer */
+    position: fixed;
+    /* Fix footer at the bottom */
+    width: 100%;
+    /* Full width */
+    bottom: 0;
+    /* Stick to bottom */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack footer content */
+    align-items: center;
+    /* Center items */
+}
+
+footer ul {
+    display: flex;
+    /* Display list items in a row */
+}
+
+footer li {
+    margin: 0 1rem;
+    /* Spacing between footer items */
+}
+
+footer p {
+    margin: 0;
+    /* No margin for paragraphs */
+}
+
+
+/* Utility Classes */
+
+.flex {
+    display: flex;
+    /* Flexbox for easy alignment */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Center items vertically */
+}
+
+
+/* Home Container Styles */
+
+
+/* Container and Text Styling */
+
+.home-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background: url('/static/images/homepgbgimg2.jpg') no-repeat center center;
+    background-size: cover;
+    height: 75vh;
+}
+
+.home-container {
+    background-color: rgba(255, 255, 255, 0.396);
+    /* White with some transparency */
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    /* Fade-in animation */
+}
+
+.home-container h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.home-container p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.home-container a {
+    display: inline-block;
+    /* Make the link act like a button */
+    padding: 0.5rem 1rem;
+    /* Add some padding */
+    color: #3498db;
+    background-color: #f9f9f9;
+    /* Add background color */
+    border: 2px solid #3498db;
+    /* Add a border */
+    border-radius: 4px;
+    /* Round the corners */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    /* Smooth transition for color and background */
+}
+
+.home-container a:hover {
+    color: #fff;
+    /* Change text color on hover */
+    background-color: #3498db;
+    /* Change background color on hover */
+    border-color: #2e8ece;
+}
+
+
+/* Animation Keyframes */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Login Container */
+
+
+/* Add this CSS to your existing stylesheet */
+
+
+/* Container and Form Styling */
+
+.login-container {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    /* Apply fadeIn animation */
+}
+
+.login-container h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.login-container label {
+    text-align: left;
+    font-weight: bold;
+    color: #555;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.login-container input[type="submit"] {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #2e8ece;
+}
+
+
+/* Animation Keyframes */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Search Results Container */
+
+.find {
+    background-color: #fff;
+    /* White background */
+    border-radius: 8px;
+    /* Slightly more rounded corners */
+    padding: 2rem;
+    /* Padding inside the container */
+    margin: 2rem auto;
+    /* Center the container */
+    max-width: 800px;
+    /* Max width for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Light shadow for depth */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+}
+
+
+/* Heading Styles */
+
+.find h1 {
+    text-align: center;
+    /* Center-align text */
+    color: #333;
+    /* Standard dark text color */
+    margin-bottom: 1.5rem;
+    /* Space below the heading */
+    font-size: 2rem;
+    /* Larger font size */
+}
+
+
+/* Search Results List */
+
+.find ul {
+    list-style-type: decimal;
+    /* Remove default list styling */
+    padding: 0;
+}
+
+
+/* Search Result Items */
+
+.card {
+    background-color: #f9f9f9;
+    /* Very light grey background */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 1rem;
+    /* Padding inside the cards */
+    margin-bottom: 1rem;
+    /* Space between cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Light shadow for depth */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* Smooth transition for hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    /* Deeper shadow on hover */
+}
+
+.card a {
+    color: #3498db;
+    /* Teal color for links */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+    /* Bold text */
+}
+
+.card a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+
+/* Details Post Container */
+
+.details-post {
+    background-color: #fff;
+    /* White background */
+    border-radius: 8px;
+    /* Slightly more rounded corners */
+    padding: 2rem;
+    /* Padding inside the container */
+    margin: 2rem auto;
+    /* Center the container */
+    max-width: 800px;
+    /* Max width for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Light shadow for depth */
+}
+
+
+/* Card Styles */
+
+.details-post .card {
+    background-color: #f9f9f9;
+    /* Very light grey background */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 1rem;
+    /* Padding inside the card */
+    margin-bottom: 1.5rem;
+    /* Space between cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Light shadow for depth */
+}
+
+
+/* Heading Styles */
+
+.details-post h1,
+.details-post h2 {
+    color: #333;
+    /* Standard dark text color */
+    margin-bottom: 1rem;
+    /* Space below the heading */
+}
+
+.details-post p {
+    color: #555;
+    /* Dark grey for paragraph text */
+    line-height: 1.6;
+    /* Better readability */
+    margin-bottom: 0.5rem;
+    /* Space between paragraphs */
+}
+
+
+/* Comments Section */
+
+.details-post ul {
+    list-style-type: none;
+    /* Remove default list styling */
+    padding: 0;
+}
+
+.details-post li {
+    background-color: #fff;
+    /* White background for list items */
+    border: 1px solid #ddd;
+    /* Light border */
+    border-radius: 4px;
+    /* Rounded corners */
+    padding: 0.5rem;
+    /* Padding inside list items */
+    margin-bottom: 0.5rem;
+    /* Space between list items */
+}
+
+.details-post li:nth-child(odd) {
+    background-color: #f1f1f1;
+    /* Light grey background for alternate items */
+}
+
+
+/* Comment Form */
+
+.details-post form {
+    display: flex;
+    flex-direction: column;
+    /* Stack form elements vertically */
+    gap: 1rem;
+    /* Space between form elements */
+}
+
+.details-post form input[type="submit"] {
+    padding: 0.7rem 1.5rem;
+    /* Padding inside the button */
+    border: none;
+    /* Remove border */
+    border-radius: 4px;
+    /* Rounded corners */
+    background-color: #3498db;
+    /* Teal background */
+    color: #fff;
+    /* White text */
+    font-size: 1rem;
+    /* Standard font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.details-post form input[type="submit"]:hover {
+    background-color: #1368a0;
+    /* Darker teal on hover */
+}
+
+
+/* Edit Blog Post Container */
+
+.edit-blog-container {
+    background-color: #fff;
+    /* White background */
+    border-radius: 8px;
+    /* Slightly more rounded corners */
+    padding: 2rem;
+    /* Padding inside the container */
+    margin: 2rem auto;
+    /* Center the container */
+    max-width: 800px;
+    /* Max width for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Light shadow for depth */
+    text-align: center;
+    /* Center-align text */
+}
+
+
+/* Heading Styles */
+
+.edit-blog-container h1 {
+    color: #333;
+    /* Standard dark text color */
+    margin-bottom: 1.5rem;
+    /* Space below the heading */
+    font-size: 2rem;
+    /* Larger font size */
+}
+
+
+/* Form Styles */
+
+.edit-blog-container form {
+    display: flex;
+    flex-direction: column;
+    /* Stack form elements vertically */
+    gap: 1rem;
+    /* Space between form elements */
+}
+
+.edit-blog-container label {
+    text-align: left;
+    /* Left-align labels */
+    margin-bottom: 0.5rem;
+    /* Space below the label */
+    font-weight: bold;
+    /* Bold text for labels */
+    color: #555;
+    /* Dark grey for labels */
+}
+
+.edit-blog-container input[type="text"],
+.edit-blog-container textarea {
+    width: 100%;
+    /* Full width inputs */
+    padding: 0.75rem;
+    /* Increased padding inside inputs */
+    border: 1px solid #ddd;
+    /* Light border */
+    border-radius: 4px;
+    /* Rounded corners */
+    font-size: 1rem;
+    /* Standard font size */
+    background-color: #fff;
+    /* White background */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    /* Subtle inner shadow */
+    transition: border-color 0.3s ease;
+    /* Smooth transition for border color */
+}
+
+.edit-blog-container input[type="text"]:focus,
+.edit-blog-container textarea:focus {
+    border-color: #3498db;
+    /* Teal border on focus */
+    outline: none;
+    /* Remove default outline */
+}
+
+.edit-blog-container button {
+    padding: 0.75rem 1.75rem;
+    /* Increased padding inside button */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Slightly more rounded corners */
+    background-color: #3498db;
+    /* Teal background */
+    color: #fff;
+    /* White text */
+    font-size: 1rem;
+    /* Standard font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    /* Light shadow for button */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transitions */
+}
+
+.edit-blog-container button:hover {
+    background-color: #166498;
+    /* Darker teal on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    /* Deeper shadow on hover */
+}
+
+
+/* Blog Post List Container */
+
+.post_list {
+    background-color: #fff;
+    /* White background */
+    border-radius: 8px;
+    /* Slightly more rounded corners */
+    padding: 2rem;
+    /* Padding inside the container */
+    margin: 2rem auto;
+    /* Center the container */
+    max-width: 800px;
+    /* Max width for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Light shadow for depth */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+}
+
+
+/* Heading Styles */
+
+#head1 {
+    text-align: center;
+    /* Center-align text */
+    color: #333;
+    /* Standard dark text color */
+    margin-bottom: 1.5rem;
+    /* Space below the heading */
+    font-size: 2rem;
+    /* Larger font size */
+    border-bottom: 2px solid #ddd;
+    /* Bottom border */
+    padding-bottom: 0.5rem;
+    /* Padding below the heading */
+}
+
+
+/* Blog Post List */
+
+.post_list ul {
+    list-style-type: none;
+    /* Remove default list styling */
+    padding: 0;
+}
+
+
+/* Blog Post Items */
+
+.card {
+    background-color: #f9f9f9;
+    /* Very light grey background */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 1rem;
+    /* Padding inside the cards */
+    margin-bottom: 1rem;
+    /* Space between cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Light shadow for depth */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* Smooth transition for hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    /* Deeper shadow on hover */
+}
+
+.card a {
+    color: #3498db;
+    /* Teal color for links */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+    /* Bold text */
+}
+
+.card a:hover {
+    text-decoration: none;
+    /* Underline on hover*/
+}
+
+
+/* New Blog Container */
+
+.new_blog {
+    background-color: #f9f9f9;
+    /* Very light grey background */
+    border-radius: 8px;
+    /* Slightly more rounded corners */
+    padding: .5rem;
+    /* Padding inside the container */
+    margin: .2rem auto;
+    /* Center the container */
+    max-width: 800px;
+    /* Max width for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Light shadow for depth */
+    text-align: center;
+    /* Center-align text */
+}
+
+
+/* Heading Styles */
+
+.new_blog h1 {
+    color: #333;
+    /* Standard dark text color */
+    margin-bottom: 1.5rem;
+    /* Space below the heading */
+    font-size: 2rem;
+    /* Larger font size */
+}
+
+
+/* Form Styles */
+
+.newpost {
+    display: flex;
+    flex-direction: column;
+    /* Stack form elements vertically */
+    gap: .2rem;
+    /* Space between form elements */
+}
+
+.newpost label {
+    text-align: left;
+    /* Left-align labels */
+    margin-bottom: 0.2rem;
+    /* Space below the label */
+    font-weight: bold;
+    /* Bold text for labels */
+    color: #555;
+    /* Dark grey for labels */
+}
+
+.newpost input[type="text"],
+.newpost textarea {
+    width: 80%;
+    /* Full width inputs */
+    padding: 0.75rem;
+    /* Increased padding inside inputs */
+    border: 1px solid #ddd;
+    /* Light border */
+    border-radius: 4px;
+    /* Rounded corners */
+    font-size: 1rem;
+    /* Standard font size */
+    background-color: #fff;
+    /* White background */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    /* Subtle inner shadow */
+    transition: border-color 0.3s ease;
+    /* Smooth transition for border color */
+}
+
+.newpost input[type="text"]:focus,
+.newpost textarea:focus {
+    border-color: #3498db;
+    /* Teal border on focus */
+    outline: none;
+    /* Remove default outline */
+}
+
+.newpost button {
+    padding: 0.75rem 1.75rem;
+    /* Increased padding inside button */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Slightly more rounded corners */
+    background-color: #3498db;
+    /* Teal background */
+    color: #fff;
+    /* White text */
+    font-size: 1rem;
+    /* Standard font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    /* Light shadow for button */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transitions */
+}
+
+.newpost button:hover {
+    background-color: #0f5686;
+    /* Darker teal on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    /* Deeper shadow on hover */
+}
+
+
+/* Registration Container */
+
+.register-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.centerpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Form Inputs and Button */
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form button {
+    width: 100%;
+    padding: 6px 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+
+/* Button Styling */
+
+form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #136297;
+}
+
+
+/* Input Focus Effect */
+
+form input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+
+/* Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Mobile Responsive Styles */
+
+
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Mobile Navigation */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar li {
+        margin: 0.5rem 0;
+    }
+    .navbar a {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Mobile Search Form */
+
+@media (max-width: 768px) {
+    .search input[type="search"] {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .search input[type="submit"] {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Mobile Content Styles */
+
+@media (max-width: 768px) {
+    #content {
+        padding: 1rem;
+    }
+}
+
+
+/* Mobile Footer Styles */
+
+@media (max-width: 768px) {
+    footer {
+        padding: 0.5rem;
+    }
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer li {
+        margin: 0.5rem 0;
+    }
+}
+
+
+/* Mobile Home Container Styles */
+
+@media (max-width: 768px) {
+    .home-container {
+        padding: 1rem;
+        margin: 1rem auto;
+        max-width: 90%;
+    }
+    .home-container h1 {
+        font-size: 1.8rem;
+    }
+    .home-container p {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Mobile Login Container Styles */
+
+@media (max-width: 768px) {
+    .login-container {
+        padding: 1rem;
+        margin: 1rem auto;
+        max-width: 90%;
+    }
+    .login-container h1 {
+        font-size: 1.8rem;
+    }
+    .login-container form {
+        gap: 0.5rem;
+    }
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .login-container input[type="submit"] {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Mobile Search Results Container Styles */
+
+@media (max-width: 768px) {
+    .find {
+        padding: 1rem;
+        margin: 1rem auto;
+        max-width: 90%;
+    }
+    .find h1 {
+        font-size: 1.8rem;
+    }
+    .find ul {
+        list-style-type: decimal;
+        padding: 0;
+    }
+    .find li {
+        margin: 0.5rem 0;
+    }
+}
+
+
+/* Mobile Details Post Container Styles */
+
+@media (max-width: 768px) {
+    .details-post {
+        padding: 1rem;
+        margin: 1rem auto;
+        max-width: 90%;
+    }
+    .details-post h1,
+    .details-post h2 {
+        font-size: 1.8rem;
+    }
+    .details-post p {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Mobile Edit Blog Post Container Styles */
+
+@media (max-width: 768px) {
+    .edit-blog-container {
+        padding: 1rem;
+        margin: 1rem auto;
+        max-width: 90%;
+    }
+    .edit-blog-container h1 {
+        font-size: 1.8rem;
+    }
+    .edit-blog-container form {
+        gap: 0.5rem;
+    }
+    .edit-blog-container input[type="text"],
+    .edit-blog-container textarea {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .edit-blog-container button {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Mobile Blog Post List Container Styles */
+
+@media (max-width: 768px) {
+    .post_list {
+        padding: 1rem;
+        margin: 1rem auto;
+        max-width: 90%;
+    }
+    .post_list h1 {
+        font-size: 1.8rem;
+    }
+    .post_list ul {
+        list-style-type: decimal;
+        padding: 0;
+    }
+    .post_list li {
+        margin: 0.5rem 0;
+    }
+}
+
+
+/* Mobile New Blog Container Styles */
+
+@media (max-width: 768px) {
+    .new_blog {
+        padding: 1rem;
+        margin: 1rem auto;
+        max-width: 90%;
+    }
+    .new_blog h1 {
+        font-size: 1.8rem;
+    }
+    .new_blog form {
+        gap: 0.5rem;
+    }
+    .new_blog input[type="text"],
+    .new_blog textarea {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .new_blog button {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Mobile Registration Container Styles */
+
+@media (max-width: 768px) {
+    .register-container {
+        padding: 1rem;
+        margin: 1rem auto;
+        max-width: 90%;
+    }
+    .register-container h1 {
+        font-size: 1.8rem;
+    }
+    .register-container form {
+        gap: 0.5rem;
+    }
+    .register-container input[type="text"],
+    .register-container input[type="password"] {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .register-container button {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+}
